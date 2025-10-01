@@ -2,7 +2,7 @@ hello
     <img span  src="https://files.catbox.moe/faai6r.png" width="300" height="414" alt="this is a picture of josuke" title="Josuke is a fuck boi">
         <audio src="https://files.catbox.moe/r40ekf.opus">
         <source src="https://files.catbox.moe/r40ekf.opus">
-        This browser does not support HTML5 so play the song, noob
+        This browser does not support HTML5 so play the song, 
         </audio>
 
 <div style="background-image: url(https://files.catbox.moe/fom44o.gif) ; background-size: cover;"></div>
