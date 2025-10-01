@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .magic{
+        transition: 0.5s ease;
+    }
+    
+    .magic:hover {
+        background-color: bisque;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: xx-large;        
+        cursor: pointer;
+        font-weight: bold;
+    }
+</style>
+<style>
+    .rainbow {
+        color: black;
+        display: inline-block;
+        padding: 5px 10px;
+        animation: animation-bg 5s linear infinite;
+    }
+    @keyframes animation-bg {
+    0%   { background-color: violet; }
+    16%  { background-color: orange; }
+    33%  { background-color: yellow; }
+    50%  { background-color: green; }
+    83%  { background-color: indigo; }
+    100% { background-color: violet; }
+    }
+</style>
+
+<head>
+    <meta charset="urf-8">
+    <title> Website Của Phat </title>
+</head>
+<body >
+    <h1> Chào mừng đến website của Phat </h1>
+    <b> đây là dòng chữ được in đậm</b></br>
+    <i> đây là dòng chữ được in nghiên </i></br>
+    <mark> đây là dòng chữ được highlight </mark></br>
+    <sub> đây là một dòng sub</sub></br>
+    <sup> đây là một dòng sup</sup></br>
+    <ins> đây là một dòng được gạch chân</ins></br>
+    <del> đây là một dòng được xóa</del></br>
+
+
+<hr>
+<fieldset >
+    <legend> Đây là một fieldset</legend>
+    <p> Bấm chuột vào <a href="https://youtube.com" target="_blank"><span class="magic">Đây</span></a> để mở youtube</p>
+    <p> Bấm chuột vào <a href="Trang web thu 2 cua ggphat.html" target="_blank"><span class="magic">Đây</span></a> để qua web thứ 2</p>
+    Di chuột vào <span class="magic">Đây</span> để thấy hiệu ứng
+<p>Đây là <span class="rainbow">hiệu ứng cầu vồng</span></p>
+</fieldset>
+<hr>
+<fieldset>
+    <table bgcolor="lightyellow">
+        <thead >
+            <tr bgcolor="violet" align="center">
+                <td> Tiêu đề 1</td>
+                <td> Tiêu đề 2</td>
+            </tr>
+        </thead>
+        <tbody bgcolor="lightgrey align="center">
+            <tr>
+                <td> Nội dung 1</td>
+                <td> Nội dung 2</td>
+            </tr>
+        </tbody>
+        <tfoot align="center">
+            <tr>
+                <td> Kết luận 1</td>
+                <td> Kết luận 2</td>
+            </tr>
+        </tfoot>
+    </table>
+</fieldset>
+<hr>
+<fieldset >
+    <ul>
+        <li> Đây là một bullet point được tạo bằng thẻ</li>
+        <li> Đây là một bullet point được tạo bằng thẻ</li>
+        <li> Đây là một bullet point được tạo bằng thẻ</li>
+    </ul>
+</br>
+    <ol>
+        <li> Đây là một dòng được đánh từ số 1 </li>
+        <li> Đây là một dòng được đánh số 2 </li>
+        <li> Đây là một dòng được đánh số 3 </li>
+    </ol>
+
+</br>
+    <ol start="5">
+        <li> Đây là một dòng được đánh từ số 5 </li>
+        <li> Đây là một dòng được đánh số 6 </li>
+        <li> Đây là một dòng được đánh số 7 </li>
+    </ol>
+</br>
+    <ol type="A">
+        <li> Đây là một dòng được đánh từ chữ A </li>
+        <li> Đây là một dòng được đánh chữ B </li>
+        <li> Đây là một dòng được đánh chữ C </li>
+    </ol>
+</br>
+    <dt>Tiêu đề 1</dt>
+        <dd>
+            Nội dung 1
+        </dd>
+    
+</fieldset>
+<hr>
+<fieldset>
+    <img span class="rainbow" src="https://files.catbox.moe/faai6r.png" width="300" height="414" alt="this is a picture of josuke" title="Josuke is a fuck boi"></iframe>
+    <audio span class="rainbow"controls src="https://files.catbox.moe/r40ekf.opus">
+        <source src="https://files.catbox.moe/r40ekf.opus">
+        This browser does not support HTML5 so play the song, noob
+        </audio>
+    <iframe style="border: 0;" src="Đây là một quảng cáo.html" width="400" height="245"></iframe>
+</fieldset>
+
+<hr>
+<fieldset>
+    <a href = "https://duckduckgo.com/" target="_blank" >
+    <button onclick="dosomething()" style="background-color: violet; color: greenyellow; border-radius: 50px; font-size: 20px;"> Bấm vào đây</button>
+    </a>
+
+
+
+    <button onclick="dosomething()" style="background-color: lightgrey; color: black; border-radius: 50px; font-size: 20px;"> Bấm vào đây</button>
+    <p id="test">hello</p>
+<script>
+    function dosomething(){
+        let p = document.getElementById("test");
+        if (p.innerHTML === "hello") {
+            p.innerHTML = "goodbye";
+        } else if (p.innerHTML === "goodbye") {
+            p.innerHTML = "hi";
+        } else {
+            p.innerHTML = "hello"; // quay lại vòng ban đầu
+        }
+    }
+</script>
+</fieldset>
+
+<hr>
+<fieldset>
+    <form action="action_page.pfp" method="POST">
+        <div><label for="fname"> first name : </label>
+        <input type="text" id="fname" placeholder="Tất Thành Phát" required><br> </div>
+        <br>
+        <div><label for="lname"> Last name : </label>
+        <input type="text" id="lname" placeholder="Ngô" required> <br></div>
+        <br>
+        <div><label for="password"> password : </label>
+        <input type="password" id="password" required> </div>
+        <br>
+        <div><label for="email"> email : </label>
+        <input type="email" id="email" required placeholder="avdol@gmail.com"> </div>
+        <br>
+        <div><label for="tel">telephone : </label>
+        <input type="tel" id="tel" required placeholder="(84)-123456789"> </div>
+        <br>
+        <div><label for="Bday"> Birthday : </label>
+        <input type="date" id="Bday" required> </div>
+        <br>
+        <div><label for="number"> number : </label>
+        <input type="number" id="number" required min="0" max="999" value="0"> </div>
+        <br>
+        
+    <div>
+        <label> Fat </label>
+        <input type="radio" name="title">
+        <br>
+        
+        <label> Skinny </label>
+        <input type="radio" name="title">
+        <br>
+        
+    </div>
+    <div>
+        <label> payment </label>
+        <select id="payment" name="payment method">
+            <option> paypal </option>
+            <option> google pay</option>
+            <option> apple pay</option>
+            <option> viet bank </option>
+        </select>
+    </div>
+
+    <div>
+        <label> Bấm vào ô </label>
+        <input type="checkbox">
+    </div>
+        <input type="reset">
+
+    </form>
+</fieldset>
+
+<fieldset>
+    <legend> Các bài tập đã làm</legend>
+
+    <span>Bài 1</span>
+    <div>
+        <fieldset>
+                <h1>CÔ HÁI MƠ</h1>
+    <div style="white-space: pre;">
+<em>Thơ thấn đường chiều một khách thơ,
+Say nhìn xa rặng núi xanh lơ,</em>
+Khí trời lặng lẽ và trong trẻo,
+Thấp thoáng rừng mơ,<bold>Cô hái mơ.</bold>
+<u>Tác giả:</u> <del>Vô Danh</del>    </div>
+        </fieldset>
+    </div>
+
+<span>Bài 2</span>
+<fieldset>
+        <div style="color: red;">
+    <h1 style="text-align: center;"> Chương trình đào tạo thiết kế web</h1>
+</div>
+<div>
+    <ul>
+        <li style="color: blue;">
+            Ngôn ngữ html và Frontpage
+        </li>
+        
+        <li style="color: blue;">
+xử lí ảnh và thiết kế giao diện photoshopCS
+        </li>
+        
+        <li style="color: blue;">
+Dreamwaver WX
+        </li>
+        
+        <li style="color: blue;">
+Khai thác và quảng trị domain và hosting
+        </li>
+        
+        <li style="color: blue;">
+            Ngôn ngữ kịch bản và Javascript
+        </li>
+    </ul>
+</div>
+<div>
+    <p style="color: red;">Mọi thông tin chi tiết vui lòng liên hệ: <span style="color: purple;">Văn phòng giáo vụ</span> </p>
+</div>
+
+
+</fieldset>
+<span>bài 3</span>
+<fieldset>
+        <h4 style="font: bold;"> Văn bản có chỉ số Trên/Dưới</h4>
+    <p>AX<sup>2</sup>+BX+C=0</p>
+    <p>Hôm nay thời tiết : 36<sup>0</sup>C</p>
+    <p>H<sub>2</sub>O + CaCO<sub>3</sub></p>
+
+</fieldset>
+<span>bài 4</span>
+<fieldset>
+        <p>Bản quyền: [&copy; &#169;]</p>
+    <p>Thương hiệu: [&trade; &#153;]</p>
+    <p>Đăng ký: [&reg; &#174;]</p>
+    <p>Dấu ngoặc kép: [&quot; &#34;]</p>
+    <p>Khoảng trắng đặc biệt: [&nbsp; &#160;]</p>
+
+</fieldset>
+<span>bài 5</span>
+<fieldset>
+    <style>
+    /* Class .marquee để tạo vùng chứa chạy chữ */
+    .marquee {
+      width: 100%;              /* Chiều rộng chiếm toàn màn hình */
+      overflow: hidden;         /* Ẩn phần chữ tràn ra ngoài khung */
+      white-space: nowrap;      /* Không xuống dòng, giữ chữ chạy liên tục trên 1 dòng */
+      box-sizing: border-box;   /* Tính cả padding/border vào width để dễ kiểm soát */
+    }
+
+    /* Quy định cho đoạn chữ bên trong vùng .marquee */
+    .marquee span {
+      display: inline-block;    /* Cho phép span hoạt động như một khối inline */
+      padding-left: 100%;       /* Đẩy chữ ra ngoài bên phải màn hình, tạo hiệu ứng từ ngoài chạy vào */
+      animation: marquee 8s linear infinite; /* Gọi animation tên marquee, chạy 8 giây/lần, tuyến tính, lặp vô hạn */
+    }
+
+    /* Định nghĩa animation "marquee" */
+    @keyframes marquee {
+      0%   { transform: translateX(0); }        /* Lúc bắt đầu: chữ nằm ngoài bên phải (theo padding-left) */
+      100% { transform: translateX(-100%); }    /* Kết thúc: chữ chạy hết sang trái, ra khỏi màn hình */
+    }
+</style>
+<div style="background-color:#FFFFCC;">
+  <div class="marquee">
+    <span>Chào mừng các bạn đến với lớp chúng tôi</span>
+  </div>
+</div>
+</fieldset>
+<span>bài 6</span>
+<fieldset>
+    <style>
+    .bold {
+        font: bold;
+    }
+</style>
+<div style="background-color: aqua;">
+    <div>
+    <h1 style="text-align: center; color: red;">
+    </h1>
+    <ol type="I" start="b" style="color: red;text-transform: uppercase;">
+        <li>Thiết kế website</li>
+    </ol>
+        <ol type="1" style="color: blue;">
+            <li>Ngôn Ngữ  <b>HTML và FrontPage</b></li>
+            <li>Ngôn Ngữ kịch bản <b>Javascript</b></li>
+            <li>Thiết kế ảnh động <b>Media Flash MX</b></li>
+            <li>Thiết kế Giao diện <b>Photoshop CS</b></li>
+            <li>Thiết kế Website <b>Dreamweaver MX</b></li>
+    </ol>
+    </div>
+    <div>
+<ol type="I" start="2" style="color: red;text-transform: uppercase;">
+        <li>Lập trình website</li>
+            </ol>
+
+        <ol type="1" start="6" style="color: blue;">
+<li>Phân tích và Thiết kế CSDL</li>
+<li>lập trình CSDL ASP.NET và SQL Server</li>
+<li>Quản trị Website</li>
+<li> <b> Đề Tài Tốt Nghiệp</b></span></li>
+        </ol>
+</div>
+
+
+<hr>
+<span style="color: blue;">Mọi Thông tin xin liên hệ : GGphat
+</span>
+</div>
+
+</fieldset>
+<span>bài 7</span>
+<fieldset>
+<div style="background-image: url(https://files.catbox.moe/fom44o.gif) ; background-size: cover;">
+    <h1 style="text-align: center; color: rgb(15, 231, 159);">Chương trình đào tạo</h1>
+    <div>
+        <p style="font: bold; font-size: x-large; color: red;" >Tin học văn phòng</p>
+        <p style="color: blue; margin-left: 30px;">
+  Tin học căn bản & WindowsXP<br>
+  Soạn Thảo văn bản Microsoft Word 2003<br>
+  Xử lý bảng tính Microsoft Excel 2003
+</p>
+<p style="font: bold; font-size: x-large; color: red;" >Tin học quản lí</p>
+
+<p style="color: blue; margin-left: 30px;">
+  Lập trình CSDL Microsoft Access 2003<br>
+  Thiết kế trình chiếu Microsoft PowerPoint 2003
+</p>
+
+    </div>
+</div>
+
+</fieldset>
+<span>bài 8</span>
+<fieldset>
+<div>
+  <div style="display: flex; align-items: flex-start; max-width: 600px;">
+    <img src="https://files.catbox.moe/bdy7ih.jpg" 
+         alt="Bill Gates" 
+         title="Đây là Hình Ảnh Bill Gates" 
+         style="margin: 5px; width: 200px; height: 100px;">
+    <p>
+      Bill Gates, người sáng lập Công ty phần mềm Microsoft và là người giàu nhất thế giới,
+      cho biết cơ quan thuế của Mỹ phải lưu trữ các dữ liệu tài chính...
+    </p>
+  </div>
+</div>
+
+</fieldset>
+<span>bài 9</span>
+<fieldset>
+    <div>
+    <fieldset style="border-radius: 20px;">
+        <ol type="1" start="1">
+            <li>thuật viên tin học</li>
+            <li><a href="https://duckduckgo.com">Chuyên ngành Website</a></li>
+        </ol>
+        <hr>
+        <a href="https://duckduckgo.com">Học phần I</a><br>
+        <a href="https://duckduckgo.com">Học phần II</a><br>
+        <a href="https://duckduckgo.com">Học phần III</a><br>
+<p style="text-align: right;"> đầu trang</p>
+    </div>
+</fieldset>
+<span>bài 10</span>
+<fieldset>
+        <h1 style="color: aqua;"> Danh bạ website</h1><br>
+  <a href="https://vietnamnet.vn/" target="_blank">
+    <img src="https://i.vgy.me/oy4bhf.jpg" width="200" height="100" style="border: 6px none black;"> <!-- không viền -->
+  </a>
+  <br><br>
+
+  <a href="https://vietnamnet.vn/" target="_blank">
+    <img src="https://i.vgy.me/oy4bhf.jpg" width="200" height="100" style="border: 6px solid black;"> <!-- viền liền -->
+  </a>
+  <br><br>
+
+  <a href="https://vietnamnet.vn/" target="_blank">
+    <img src="https://i.vgy.me/oy4bhf.jpg" width="200" height="100" style="border: 6px dashed red;"> <!-- viền gạch đứt -->
+  </a>
+  <br><br>
+
+  <a href="https://vietnamnet.vn/" target="_blank">
+    <img src="https://i.vgy.me/oy4bhf.jpg" width="200" height="100" style="border: 6px dotted blue;"> <!-- viền chấm -->
+  </a>
+  <br><br>
+
+  <a href="https://vietnamnet.vn/" target="_blank">
+    <img src="https://i.vgy.me/oy4bhf.jpg" width="200" height="100" style="border: 8px double green;"> <!-- viền đôi -->
+  </a>
+  <br><br>
+
+  <a href="https://vietnamnet.vn/" target="_blank">
+    <img src="https://i.vgy.me/oy4bhf.jpg" width="200" height="100" style="border: 10px groove purple;"> <!-- viền khắc chìm -->
+  </a>
+  <br><br>
+
+  <a href="https://vietnamnet.vn/" target="_blank">
+    <img src="https://i.vgy.me/oy4bhf.jpg" width="200" height="100" style="border: 10px ridge orange;"> <!-- viền nổi -->
+  </a>
+  <br><br>
+
+  <a href="https://vietnamnet.vn/" target="_blank">
+    <img src="https://i.vgy.me/oy4bhf.jpg" width="200" height="100" style="border: 10px inset brown;"> <!-- viền lõm -->
+  </a>
+  <br><br>
+
+  <a href="https://vietnamnet.vn/" target="_blank">
+    <img src="https://i.vgy.me/oy4bhf.jpg" width="200" height="100" style="border: 10px outset teal;"> <!-- viền nổi lên -->
+  </a>
+  <br><br>
+
+  <a href="https://vietnamnet.vn/" target="_blank">
+    <img src="https://i.vgy.me/oy4bhf.jpg" width="200" height="100" style="border: 6px hidden black;"> <!-- viền ẩn -->
+  </a>
+  <br><br>
+</fieldset>
+<span>bài 11</span>
+<fieldset>
+        <h1 style="text-align: center; color: blue;">Kết quả học tập</h1> 
+    <div>
+<table width="600" border="2" cellspacing="0" cellpadding="10" style="margin-left: auto; margin-right: auto; border-color: blueviolet; border-collapse: collapse;">
+    <div ></div>
+    <thead style="background-color: greenyellow; border-color: blueviolet;" >
+        <tr>
+        <td rowspan="2" style="border: 2px solid blueviolet;">Họ và tên <br>Học sinh</td>
+        <td colspan="2" style="border: 2px solid blueviolet;">Năm sinh</td>
+        <td rowspan="2" style="border: 2px solid blueviolet;">điểm TB</td>
+        <td rowspan="2" style="border: 2px solid blueviolet;"> Xếp loại</td>
+        </tr>
+        <tr>
+            
+            <td style="border: 2px solid blueviolet;">Nam</td>
+            <td style="border: 2px solid blueviolet;">Nữ</td>
+        </tr>
+    </thead>
+    <tbody style=" border-color: blueviolet;">
+<tr>
+    <td style="border: 2px solid blueviolet;">Lê Thanh Xuân</td>
+    <td style="border: 2px solid blueviolet;"></td>
+    <td style="text-align: center; border: 2px solid blueviolet;">1985</td>
+    <td style="text-align: center; border: 2px solid blueviolet;">8.5</td>
+    <td style="text-align: center; border: 2px solid blueviolet;">Giỏi</td>
+</tr>
+<tr>
+    <td style="border: 2px solid blueviolet;">Phan thế hạ</td>
+    <td style="text-align: center;border: 2px solid blueviolet;">1985</td>
+    <td style="border: 2px solid blueviolet;"></td>
+    <td style="text-align: center;border: 2px solid blueviolet;">6.5</td>
+    <td style="text-align: center;border: 2px solid blueviolet;">Khá</td>
+</tr>
+<tr>
+    <td style="border: 2px solid blueviolet;">Trần Hoài Thu</td>
+    <td style="border: 2px solid blueviolet;"></td>
+    <td style="text-align: center; border: 2px solid blueviolet;">1986</td>
+    <td style="text-align: center; border: 2px solid blueviolet;">9.5</td>
+    <td style="text-align: center; border: 2px solid blueviolet;">Xuất Sắc</td>
+</tr>
+<tr>
+    <td style="border: 2px solid blueviolet;">Trương Lưu Đông</td>
+    <td style="text-align: center;border: 2px solid blueviolet;">1984</td>
+    <td style="border: 2px solid blueviolet;"></td>
+    <td style="text-align: center;border: 2px solid blueviolet;">6.0</td>
+    <td style="text-align: center;border: 2px solid blueviolet;">Trung Bình</td>
+</tr>
+<tr>
+    <td style="border: 2px solid blueviolet;">Lưu Thế Mạc</td>
+    <td style="text-align: center; border: 2px solid blueviolet;">1985</td>
+    <td style="border: 2px solid blueviolet;"></td>
+    <td style="text-align: center;border: 2px solid blueviolet;">4.5</td>
+    <td style="text-align: center;border: 2px solid blueviolet;">Kém</td>
+</tr>
+<tr style="text-align: center; background-color: greenyellow;">
+    <td colspan="3" style="border: 2px solid blueviolet;">Tổng số học sinh đạt:</td>
+    <td colspan="2" style="border: 2px solid blueviolet;">4 học sinh</td>
+</tr>
+    </tbody>
+</table>
+    </div>
+</fieldset>
+<span>bài 12</span>
+<fieldset>
+    <h1 style="text-align: center;">Đăng Nhập diễn đàn</h1>
+<form action="">
+    <table cellpadding="5">
+        <tr>
+            <td><label for=""> Tên đăng nhập: </label></td>
+            <td><label for=""><input type="text"></label></td>
+        </tr>
+        <tr>
+            <td><label for="">Mật Khẩu: </label></td>
+            <td><label for=""><input type="password"></label></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" colspan="2">
+                <input type="submit" name="" id="" value="Đăng nhập">
+                <input type="reset" name="" id="" value="Phục hồi">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</fieldset>
+<span> bài 13</span>
+<fieldset>
+    <h1>Đóng góp ý kiến</h1>
+    <form action="">
+        <table cellpadding="5">
+            <tr>
+                <td>Họ và tên: </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Nội dung góp ý: </td>
+                <td><textarea name="" id="" cols="70" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">
+                <input type="submit" name="" id="" value="Đăng nhập">
+                <input type="reset" name="" id="" value="Phục hồi">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+<span>Bài 14</span>
+<fieldset>
+    <h1 style="text-align: center;">Phiếu thăm dò ý kiến</h1>
+    <form action="">
+    <table cellpadding="5">
+        <tr>
+            <td>Họ và tên: 
+            <input type="text"></td>
+            <td>Giới tính:</td>
+            <td> <input type="radio" name="gender">Nam</td>
+            <td> <input type="radio" name="gender">Nữ</td>
+        </tr>
+        <tr>
+            <td>Những mục bạn thường quan tên trên Internet</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox">Tin tức <br>
+                <input type="checkbox">Giải trí <br>
+                <input type="checkbox">Góc học tập <br>
+                <input type="checkbox">Các mục khác <br>
+            </td>
+        </tr>
+<tr>
+                <td style="text-align: center;" colspan="2">
+                <input type="submit" name="" id="" value="Đăng nhập">
+                <input type="reset" name="" id="" value="Phục hồi">
+
+                </td>
+            </tr>
+    </table>
+    </form>
+</fieldset>
+bài cuối
+<fieldset>
+    <label for="browser">Chọn hoặc nhập trình duyệt:</label>
+<input list="browsers" id="browser" name="browser">
+
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Safari">
+  <option value="Edge">
+  <option value="Opera">
+</datalist>
+<br><br>
+<label for="fruit">Chọn loại trái cây:</label>
+<select id="fruit" name="fruit">
+  <option value="apple">Táo</option>
+  <option value="banana">Chuối</option>
+  <option value="orange">Cam</option>
+  <option value="mango">Xoài</option>
+</select>
+
+</fieldset>
+</fieldset>
+</body>
+</html>
